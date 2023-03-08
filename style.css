@@ -1,0 +1,126 @@
+:root
+{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+.container
+{
+    min-height: 60%;
+    min-width: 40%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: var(--White);
+}
+.chanel
+{
+    height: 100%;
+    width: 252px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+}
+.text
+{
+    width: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.poof
+{
+    font-size: 11px;
+    opacity: 30%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.gab
+{
+    font-family: "Fraunces",sans-serif;
+    width: 70%;
+    margin-left: 10px;
+    margin-top: -20px;
+
+}
+.info
+{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    width: 91%;
+    font-size: 13.5px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: -30px;
+    color: var(--Dark-cyan);
+    opacity: 90%;
+}
+.prices
+{
+    display: flex;
+    justify-content: baseline;
+    margin-left: 10px;
+    color: hsl(158, 36%, 37%);
+    margin-top: -30px;
+}
+.price1
+{
+    font-family: "Fraunces",sans-serif;
+
+}
+.priceog
+{
+    text-decoration: line-through;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: -20px;
+    height: 45px;
+    width: 90%;
+    border: 0px;
+    border-radius: 7px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(158, 36%, 37%,1.2);
+
+}
+@media (max-width:765px)
+{
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }   
+}
